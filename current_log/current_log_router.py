@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2020/12/28 16:53
-# @Author : chendi
-# @Email : chendi1994@cmbchina.com
-# @File : current_log_router.py
-# @Project : current_log
+
 import asyncio
 import traceback
 from datetime import datetime

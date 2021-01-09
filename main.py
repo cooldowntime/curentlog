@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
-"""
-@license: (C)Copyright 2016-2020, CMB Tech.
-@author:zhangdan-80295981
-@file:main.py
-@time:2020/11/24
-"""
+
 from fastapi import FastAPI
 
 from current_log.current_log_router import log_router

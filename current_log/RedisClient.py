@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/1/7 19:33
-# @Author : chendi
-# @Email : chendi1994@cmbchina.com
-# @File : RedisClient.py
-# @Project : current_log
+
 import redis
 
 REDIS_CONFIG = {

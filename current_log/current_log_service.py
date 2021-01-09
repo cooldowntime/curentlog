@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2020/12/16 15:36
-# @Author : chendi
-# @Email : chendi1994@cmbchina.com
-# @File : log_service.py
-# @Project : Training
+
 import re
 import subprocess
 import threading
