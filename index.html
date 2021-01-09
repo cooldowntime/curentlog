@@ -1,0 +1,28 @@
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>实时日志</title>
+    </head>
+    <body>
+        <h2>实时日志</h2>
+        <div id="log"></div>
+        <script>
+            var ws = new WebSocket("ws://127.0.0.1:5678/log_redis");
+            ws.onopen = () => {
+                console.log("websocket连接")
+            }
+            ws.onmessage = function(event) {
+                var log_div = document.getElementById('log')
+                log_div.innerHTML = log_div.innerHTML + event.data + '<br/>'
+                log_div.scrollTop = log.scrollHeight
+                
+            }
+            ws.onclose = function () {
+                console.log("websocket断开连接")
+            }
+            window.onbeforeunload = () => {
+                ws.close()
+            }
+        </script>
+    </body>
+</html>
